@@ -63,6 +63,10 @@ nav a {
     font-size: 1.2rem;
 }
 
+nav a:hover {
+    color: #658DA6;
+}
+
 header .mobile {
     display: none;
 }
@@ -141,13 +145,13 @@ header .mobile {
 
 /* Products Style */
 
-.products {
+#products {
     background-color: #2C4859;
     position: relative;
     padding: 1rem 5%;
 }
 
-.products h2 {
+#products h2 {
     color: white;
     font-size: 1.8rem;
 }

@@ -1,0 +1,307 @@
+/* Color Theme Swatches in Hex */
+.A-Night-to-remember-1-hex { color: #1D3240; }
+.A-Night-to-remember-2-hex { color: #2C4859; }
+.A-Night-to-remember-3-hex { color: #658DA6; }
+.A-Night-to-remember-4-hex { color: #F2DAC4; }
+.A-Night-to-remember-5-hex { color: #F2F2F2; }
+
+/* Color Theme Swatches in RGBA */
+.A-Night-to-remember-1-rgba { color: rgba(28, 50, 63, 1); }
+.A-Night-to-remember-2-rgba { color: rgba(43, 71, 89, 1); }
+.A-Night-to-remember-3-rgba { color: rgba(101, 140, 165, 1); }
+.A-Night-to-remember-4-rgba { color: rgba(242, 217, 196, 1); }
+.A-Night-to-remember-5-rgba { color: rgba(242, 242, 242, 1); }
+
+/* Color Theme Swatches in HSLA */
+.A-Night-to-remember-1-hsla { color: hsla(202, 37, 18, 1); }
+.A-Night-to-remember-2-hsla { color: hsla(202, 34, 26, 1); }
+.A-Night-to-remember-3-hsla { color: hsla(202, 26, 52, 1); }
+.A-Night-to-remember-4-hsla { color: hsla(28, 64, 85, 1); }
+.A-Night-to-remember-5-hsla { color: hsla(0, 0, 95, 1); }
+
+
+/* Universal Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Navbar Style */
+
+header {
+    height: 5rem;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 4.5rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1D3240;
+    font-size: 1.2rem;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 770px) {
+    nav a  {
+        font-size: .9rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+        display: none;
+    }
+    
+    header {
+        height: 3rem;
+    }
+      
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+    
+    header .content {
+        padding: .5rem 0;
+    }
+    
+    header .mobile li {
+        padding: 0 2.2rem;
+    }  
+}
+
+/* Banner Style */
+.banner {
+    width: 100%;
+    height: 45rem;
+    position: relative;
+    top: 5rem;
+    background-image: url('./joel-filipe-XMFC31EZPKI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: #1D3240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-text {
+    background-color: #1D3240;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.banner h1 {
+    font-size: 1.8rem;
+}
+
+.banner h1, h2 {
+    color: white;
+    margin: 1.5rem auto;
+}
+
+@media only screen and (max-width: 600px) {
+.banner-text h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    }
+
+    .banner {
+        height: 30rem;
+        top: 3rem;
+    }
+}
+
+/* Products Style */
+
+.products {
+    background-color: #2C4859;
+    position: relative;
+    padding: 1rem 5%;
+}
+
+.products h2 {
+    color: white;
+    font-size: 1.8rem;
+}
+
+.products-title {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.products-container h3 {
+    color: white;
+    font-weight: 400;
+    line-height: 1.4;
+    padding-bottom: 2rem;
+}
+
+.products-container {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 5%;
+}
+
+.external {
+    flex: 1;
+    padding: 1rem;
+    margin: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+.img-container img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    border-radius: .7rem;
+} 
+
+.products-container .img-container {
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .products-container {
+        flex-direction: column;
+        padding: 0;
+    }
+}
+
+/* Team Style */
+
+#team {
+    background-color: #F2DAC4;
+    border: 1px solid  #F2DAC4;
+}
+
+#team h2 {
+    color: #1D3240;
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    line-height: 1.4;
+}
+
+#team h3{
+    color: #1D3240;
+}
+
+.members {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+}
+
+.member-img {
+    width: 40%;
+    height: 65%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+
+.member-img img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+.employee {
+    flex: 1;
+    padding: 1rem 0;
+    margin: 0 .5rem;
+}
+
+.name-container {
+    margin-top: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+.members {
+    flex-direction: column;
+    padding: 0;
+    }
+
+#team .name-container h2 {
+    font-size: 1.2rem;
+    }
+
+#team .name-container h3 {
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+    }
+}
+
+/* Contact Style */
+
+#contact {
+    background-color: #658DA6;
+    border: 1px solid #658DA6;
+    position: relative;
+    height: 12rem;
+}
+
+#contact h3 {
+    color: white;
+    margin: 2rem auto;
+}
+
+#contact h3 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+/* Footer Style */
+
+footer {
+    background-color: #F2F2F2;
+    display: flex;
+    height: 3.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer h3 {
+    color: #1D3240;
+    margin: 0 1.3rem;
+    font-size: .8rem;
+}
+
+@media only screen and (max-width: 600px) {
+
+    footer h3 {
+        font-size: .6rem;
+    }
+}
